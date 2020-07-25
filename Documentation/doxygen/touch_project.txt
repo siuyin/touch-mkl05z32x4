@@ -23,6 +23,7 @@
 
 \page page_components Components 
 - \subpage Bit1
+- \subpage Bit2
 
 */
 

@@ -19,7 +19,7 @@
         <Line>PE_Const</Line>
         <Line>IO_Map</Line>
       </GenSharedModules>
-      <ShrdHeaderAge0>1358532422</ShrdHeaderAge0>
+      <ShrdHeaderAge0>1358533040</ShrdHeaderAge0>
       <ShrdCodeAge0>-1</ShrdCodeAge0>
       <ShrdAsemblAge0>-1</ShrdAsemblAge0>
       <ShrdHeaderAge1>1358468392</ShrdHeaderAge1>
@@ -31,7 +31,7 @@
       <ShrdHeaderAge3>1358468392</ShrdHeaderAge3>
       <ShrdCodeAge3>-1</ShrdCodeAge3>
       <ShrdAsemblAge3>-1</ShrdAsemblAge3>
-      <GenExtraFiles lines_count="32">
+      <GenExtraFiles lines_count="33">
         <Line>Sources\TSS_SystemSetup.h</Line>
         <Line>Sources\derivative.h</Line>
         <Line>Sources\TSS\TSS_Timer.h</Line>
@@ -55,6 +55,7 @@
         <Line>Sources\TSS\TSS_API.h</Line>
         <Line>Sources\TSS\libTSS_KXX_M0.a</Line>
         <Line>Documentation\doxygen\Bit1_component.txt</Line>
+        <Line>Documentation\doxygen\Bit2_component.txt</Line>
         <Line>Documentation\doxygen\touch_project.txt</Line>
         <Line>Documentation\doxygen\RoutingReport_component.txt</Line>
         <Line>Documentation\doxygen\pex.doxyfile</Line>
@@ -65,8 +66,8 @@
         <Line>Project_Settings\Startup_Code\startup.c</Line>
         <Line>Generated_Code\Vectors.c</Line>
       </GenExtraFiles>
-      <GenExtraFileSrcDir30>lib\Kinetis\startup\</GenExtraFileSrcDir30>
-      <GenExtraFileSrcDir26>Repositories\lib\doxygen\</GenExtraFileSrcDir26>
+      <GenExtraFileSrcDir31>lib\Kinetis\startup\</GenExtraFileSrcDir31>
+      <GenExtraFileSrcDir27>Repositories\lib\doxygen\</GenExtraFileSrcDir27>
       <GenExtraFileSrcDir21>lib\TSS_Library\TSS_3_1\lib_cw_gcc\</GenExtraFileSrcDir21>
       <GenExtraFileSrcDir20>lib\TSS_Library\TSS_3_1\shared\</GenExtraFileSrcDir20>
       <GenExtraFileSrcDir19>lib\TSS_Library\TSS_3_1\shared\</GenExtraFileSrcDir19>
@@ -87,7 +88,7 @@
       <GenExtraFileSrcDir4>lib\TSS_Library\TSS_3_1\shared\</GenExtraFileSrcDir4>
       <GenExtraFileSrcDir3>lib\TSS_Library\TSS_3_1\shared\</GenExtraFileSrcDir3>
       <GenExtraFileSrcDir2>lib\TSS_Library\TSS_3_1\shared\</GenExtraFileSrcDir2>
-      <XtraAge0>1358532422</XtraAge0>
+      <XtraAge0>1358533040</XtraAge0>
       <XtraAge1>1358468465</XtraAge1>
       <XtraAge2>1358468462</XtraAge2>
       <XtraAge3>1358468462</XtraAge3>
@@ -108,16 +109,17 @@
       <XtraAge18>1358468462</XtraAge18>
       <XtraAge19>1358468462</XtraAge19>
       <XtraAge20>1358468462</XtraAge20>
-      <XtraAge27>1358532423</XtraAge27>
-      <XtraAge28>1358532423</XtraAge28>
-      <XtraAge30>1358468392</XtraAge30>
-      <XtraAge31>1358532423</XtraAge31>
-      <GenExtraFileType31>4</GenExtraFileType31>
-      <GenExtraFileType30>5</GenExtraFileType30>
+      <XtraAge28>1358533040</XtraAge28>
+      <XtraAge29>1358533040</XtraAge29>
+      <XtraAge31>1358468392</XtraAge31>
+      <XtraAge32>1358533040</XtraAge32>
+      <GenExtraFileType32>4</GenExtraFileType32>
+      <GenExtraFileType31>5</GenExtraFileType31>
+      <GenExtraFileType30>4</GenExtraFileType30>
       <GenExtraFileType29>4</GenExtraFileType29>
       <GenExtraFileType28>4</GenExtraFileType28>
-      <GenExtraFileType27>4</GenExtraFileType27>
-      <GenExtraFileType26>5</GenExtraFileType26>
+      <GenExtraFileType27>5</GenExtraFileType27>
+      <GenExtraFileType26>4</GenExtraFileType26>
       <GenExtraFileType25>4</GenExtraFileType25>
       <GenExtraFileType24>4</GenExtraFileType24>
       <GenExtraFileType23>4</GenExtraFileType23>
@@ -370,8 +372,9 @@
         <Line>TSS1_fCallBack0</Line>
         <Line>Cpu_OnNMIINT</Line>
       </GenMethodsInEvents>
-      <GenAllModules lines_count="8">
+      <GenAllModules lines_count="9">
         <Line>Bit1</Line>
+        <Line>Bit2</Line>
         <Line>Cpu</Line>
         <Line>Events</Line>
         <Line>IO_Map</Line>
@@ -381,14 +384,15 @@
         <Line>TSS1</Line>
       </GenAllModules>
       <GenExternModules lines_count="0" />
-      <GenBeanModules lines_count="2">
+      <GenBeanModules lines_count="3">
         <Line>TSS1</Line>
         <Line>Bit1</Line>
+        <Line>Bit2</Line>
       </GenBeanModules>
     </GenFiles>
     <SignalListFile>Documentation\touch_SIGNALS.txt</SignalListFile>
     <DestinationCompiler>GNUC</DestinationCompiler>
-    <ProjectModificationStamp>10</ProjectModificationStamp>
+    <ProjectModificationStamp>11</ProjectModificationStamp>
   </Options>
   <CpuID_2>
     <Generated>true</Generated>
@@ -397,7 +401,7 @@
     <GenDriverVersion>01.04</GenDriverVersion>
     <GenEventModule>Events</GenEventModule>
     <HeaderAge>1358468392</HeaderAge>
-    <CodeAge>1358532422</CodeAge>
+    <CodeAge>1358533040</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>11</GenNumMethods>
     <SetClockConfiguration>false</SetClockConfiguration>
@@ -474,7 +478,7 @@
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule>Events</GenEventModule>
     <HeaderAge>1358468465</HeaderAge>
-    <CodeAge>1358532422</CodeAge>
+    <CodeAge>1358533040</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>1</GenNumMethods>
     <Configure>true</Configure>
@@ -558,8 +562,8 @@
       <MethodPos2>Configure</MethodPos2>
       <MethodType>method</MethodType>
       <ModuleType>Code</ModuleType>
-      <LineBeg>62</LineBeg>
-      <LineEnd>121</LineEnd>
+      <LineBeg>65</LineBeg>
+      <LineEnd>124</LineEnd>
     </MethodPos>
     <GenExtraFilesCount>22</GenExtraFilesCount>
     <ExtraFile0>Sources\TSS_SystemSetup.h</ExtraFile0>
@@ -700,6 +704,121 @@
     <GenExtraFilesCount>1</GenExtraFilesCount>
     <ExtraFile0>Documentation\doxygen\Bit1_component.txt</ExtraFile0>
   </ComponentID_4>
+  <ComponentID_5>
+    <Generated>true</Generated>
+    <GenCompName>Bit2</GenCompName>
+    <GenComponentVersion>01.033</GenComponentVersion>
+    <GenDriverVersion>01.03</GenDriverVersion>
+    <GenEventModule />
+    <HeaderAge>1358533040</HeaderAge>
+    <CodeAge>1358533040</CodeAge>
+    <AsemblAge>-1</AsemblAge>
+    <GenNumMethods>13</GenNumMethods>
+    <Init>true</Init>
+    <Deinit>false</Deinit>
+    <GetDir>false</GetDir>
+    <SetDir>false</SetDir>
+    <SetInput>false</SetInput>
+    <SetOutput>false</SetOutput>
+    <GetVal>true</GetVal>
+    <PutVal>true</PutVal>
+    <ClrVal>true</ClrVal>
+    <SetVal>true</SetVal>
+    <NegVal>true</NegVal>
+    <ConnectPin>false</ConnectPin>
+    <GetRawVal>false</GetRawVal>
+    <GenNumEvents>0</GenNumEvents>
+    <GenSmartUserChangesDetected_Header>false</GenSmartUserChangesDetected_Header>
+    <GenSmartUserChangesDetected_Code>false</GenSmartUserChangesDetected_Code>
+    <GenSmartUserChangesDetected_Asembl>false</GenSmartUserChangesDetected_Asembl>
+    <GenMethodPos>12</GenMethodPos>
+    <MethodPos>
+      <MethodPos0>Init</MethodPos0>
+      <MethodType>method</MethodType>
+      <ModuleType>Header</ModuleType>
+      <LineBeg>122</LineBeg>
+      <LineEnd>145</LineEnd>
+    </MethodPos>
+    <MethodPos>
+      <MethodPos1>GetVal</MethodPos1>
+      <MethodType>method</MethodType>
+      <ModuleType>Header</ModuleType>
+      <LineBeg>146</LineBeg>
+      <LineEnd>167</LineEnd>
+    </MethodPos>
+    <MethodPos>
+      <MethodPos2>PutVal</MethodPos2>
+      <MethodType>method</MethodType>
+      <ModuleType>Header</ModuleType>
+      <LineBeg>168</LineBeg>
+      <LineEnd>193</LineEnd>
+    </MethodPos>
+    <MethodPos>
+      <MethodPos3>ClrVal</MethodPos3>
+      <MethodType>method</MethodType>
+      <ModuleType>Header</ModuleType>
+      <LineBeg>194</LineBeg>
+      <LineEnd>209</LineEnd>
+    </MethodPos>
+    <MethodPos>
+      <MethodPos4>SetVal</MethodPos4>
+      <MethodType>method</MethodType>
+      <ModuleType>Header</ModuleType>
+      <LineBeg>210</LineBeg>
+      <LineEnd>225</LineEnd>
+    </MethodPos>
+    <MethodPos>
+      <MethodPos5>NegVal</MethodPos5>
+      <MethodType>method</MethodType>
+      <ModuleType>Header</ModuleType>
+      <LineBeg>226</LineBeg>
+      <LineEnd>241</LineEnd>
+    </MethodPos>
+    <MethodPos>
+      <MethodPos6>Init</MethodPos6>
+      <MethodType>method</MethodType>
+      <ModuleType>Code</ModuleType>
+      <LineBeg>97</LineBeg>
+      <LineEnd>146</LineEnd>
+    </MethodPos>
+    <MethodPos>
+      <MethodPos7>GetVal</MethodPos7>
+      <MethodType>method</MethodType>
+      <ModuleType>Code</ModuleType>
+      <LineBeg>147</LineBeg>
+      <LineEnd>175</LineEnd>
+    </MethodPos>
+    <MethodPos>
+      <MethodPos8>PutVal</MethodPos8>
+      <MethodType>method</MethodType>
+      <ModuleType>Code</ModuleType>
+      <LineBeg>176</LineBeg>
+      <LineEnd>209</LineEnd>
+    </MethodPos>
+    <MethodPos>
+      <MethodPos9>ClrVal</MethodPos9>
+      <MethodType>method</MethodType>
+      <ModuleType>Code</ModuleType>
+      <LineBeg>210</LineBeg>
+      <LineEnd>229</LineEnd>
+    </MethodPos>
+    <MethodPos>
+      <MethodPos10>SetVal</MethodPos10>
+      <MethodType>method</MethodType>
+      <ModuleType>Code</ModuleType>
+      <LineBeg>230</LineBeg>
+      <LineEnd>249</LineEnd>
+    </MethodPos>
+    <MethodPos>
+      <MethodPos11>NegVal</MethodPos11>
+      <MethodType>method</MethodType>
+      <ModuleType>Code</ModuleType>
+      <LineBeg>250</LineBeg>
+      <LineEnd>269</LineEnd>
+    </MethodPos>
+    <GenExtraFilesCount>1</GenExtraFilesCount>
+    <ExtraFile0>Documentation\doxygen\Bit2_component.txt</ExtraFile0>
+  </ComponentID_5>
   <UsedSrcFiles>
     <SrcFile0>Drivers\Kinetis\PE_LDD.prg=1183486433</SrcFile0>
     <SrcFile1>Drivers\PEx_Kinetis.src=1183486050</SrcFile1>

@@ -6,7 +6,7 @@
 **     Version     : Component 01.000, Driver 01.04, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2020-07-25, 17:58, # CodeGen: 11
+**     Date/Time   : 2020-07-25, 18:13, # CodeGen: 12
 **     Abstract    :
 **
 **     Settings    :
@@ -57,6 +57,7 @@
   #include "Cpu.h"
   #include "TSS1.h"
   #include "Bit1.h"
+  #include "Bit2.h"
   #include "Events.h"
 
 

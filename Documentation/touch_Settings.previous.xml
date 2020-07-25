@@ -157,26 +157,10 @@ PE_DEBUGHALT();
         <Negative_Baseline_Drop v="Enabled" />
         <Automatic_HW_Recalibration v="Enabled" />
       </group>
-      <list name="Number of Electrodes" v="2">
+      <list name="Number of Electrodes" v="1">
         <group name="Electrode0">
           <enumgroup name="Sensing Method" v="TSI Module">
             <TSI_Channel v="TSI0_IN8/PTB12" />
-            <TSI_Device v="TSI0" />
-            <TSI_Interrupt v="INT_TSI0" />
-          </enumgroup>
-          <boolgroup name="Signal Shielding" v="Disabled" />
-          <boolgroup name="Signal Divider" v="Disabled" />
-          <boolgroup name="Signal Multiplier" v="Disabled" />
-          <boolgroup name="Config Registers Init" v="Enabled">
-            <Electrode_Enabled v="auto" />
-            <Electrode_Sensitivity v="63" />
-            <DC_Tracker_Enabled v="yes" />
-            <boolgroup name="Define Electrode Baseline" v="Disabled" />
-          </boolgroup>
-        </group>
-        <group name="Electrode1">
-          <enumgroup name="Sensing Method" v="TSI Module">
-            <TSI_Channel v="TSI0_IN9/PTA13" />
             <TSI_Device v="TSI0" />
             <TSI_Interrupt v="INT_TSI0" />
           </enumgroup>
@@ -194,9 +178,8 @@ PE_DEBUGHALT();
       <list name="Number of Controls" v="1">
         <group name="Control0">
           <enumgroup name="Control Type" v="KEYPAD">
-            <list name="Inputs" v="2">
+            <list name="Inputs" v="1">
               <Input0 v="0" />
-              <Input1 v="1" />
             </list>
             <Number_of_Electrodes v="0" />
             <list name="Key Groups" v="0">
@@ -290,6 +273,38 @@ PE_DEBUGHALT();
       <event name="fCallBack13" v="don&amp;apos;t generate code" />
       <event name="fCallBack14" v="don&amp;apos;t generate code" />
       <event name="fCallBack15" v="don&amp;apos;t generate code" />
+    </Events>
+  </Bean>
+  <Bean name="Bit1" type="BitIO_LDD">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="Bit1" />
+      <Pin_for_I_O v="ADC0_SE11/PTB8/TPM0_CH3" />
+      <Direction v="Output" />
+      <group name="Initialization">
+        <Init__direction v="Output" />
+        <Init__value v="1" />
+        <Auto_initialization v="no" />
+      </group>
+      <Safe_mode v="no" />
+    </Properties>
+    <Methods>
+      <Init v="generate code" />
+      <Deinit v="don&amp;apos;t generate code" />
+      <GetDir v="don&amp;apos;t generate code" />
+      <SetDir v="don&amp;apos;t generate code" />
+      <SetInput v="don&amp;apos;t generate code" />
+      <SetOutput v="don&amp;apos;t generate code" />
+      <GetVal v="generate code" />
+      <PutVal v="generate code" />
+      <ClrVal v="generate code" />
+      <SetVal v="generate code" />
+      <NegVal v="generate code" />
+      <ConnectPin v="don&amp;apos;t generate code" />
+      <GetRawVal v="don&amp;apos;t generate code" />
+    </Methods>
+    <Events>
+      <EmptySection_DummyValue />
     </Events>
   </Bean>
 </PE_PROJECT_SETTINGS_DOCUMENTATION>

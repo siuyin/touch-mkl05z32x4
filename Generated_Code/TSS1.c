@@ -7,7 +7,7 @@
 **     Version     : Component 03.001, Driver 01.00, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2020-07-25, 17:58, # CodeGen: 11
+**     Date/Time   : 2020-07-25, 18:13, # CodeGen: 12
 **     Contents    :
 **         Configure - byte TSS1_Configure(void);
 **
@@ -50,6 +50,8 @@ void TSS1_InitDevices(void)
 {
   /* Modules Clock support */
 
+  /* SIM_SCGC5: PORTA=1 */
+  SIM_SCGC5 |= SIM_SCGC5_PORTA_MASK;
   /* SIM_SCGC5: PORTB=1 */
   SIM_SCGC5 |= SIM_SCGC5_PORTB_MASK;
   /* SIM_SCGC5: TSI=1 */
@@ -58,6 +60,7 @@ void TSS1_InitDevices(void)
   /* TSI Module MUX Settings */
 
   PORTB_PCR12 = PORT_PCR_MUX(0);
+  PORTA_PCR11 = PORT_PCR_MUX(0);
 }
 
 /*
@@ -100,7 +103,7 @@ byte TSS1_Configure(void)
   u8Result |= TSS_SetKeypadConfig(TSS1_cKey0.ControlId, Keypad_ControlConfig_Register, TSS_KEYPAD_CONTROL_EN_MASK | TSS_KEYPAD_CALLBACK_EN_MASK);
 
   /* Electrode dc-tracker enablers */
-  u8Result |= TSS_SetSystemConfig(System_DCTrackerEnablers_Register+0, 0x01);
+  u8Result |= TSS_SetSystemConfig(System_DCTrackerEnablers_Register+0, 0x03);
 
   /* Sets Trigger Mode */
   u8Result |= TSS_SetSystemConfig(System_SystemTrigger_Register, TSS_TRIGGER_MODE_ALWAYS);

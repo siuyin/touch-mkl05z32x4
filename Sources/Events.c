@@ -160,9 +160,15 @@ void TSS1_fCallBack0(TSS_CONTROL_ID u8ControlId) {
 		TSS_KEYPAD_BUFFER_READ(u8Event, TSS1_cKey0); /* Read the buffer and store the event in the u8Event variable */
 
 		/* Write your code here ... */
-		if ((u8Event & 0x0f) == 0) {
-			Bit1_NegVal(redLED); // toggle
+		switch(u8Event & 0x0f){
+		case 0:
+			Bit1_NegVal(redLED); // toggle red LED
+			break;
+		case 1:
+			Bit2_NegVal(blueLED);
+			break;
 		}
+
 		(void) u8Event;
 	}
 

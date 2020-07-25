@@ -35,6 +35,7 @@
 #include "IO_Map.h"
 #include "TSS1.h"
 #include "Bit1.h"
+#include "Bit2.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -129,6 +130,7 @@ void TSS1_fCallBack0(TSS_CONTROL_ID u8ControlId);
 */
 
 LDD_TDeviceData* redLED;
+LDD_TDeviceData* blueLED;
 
 /* END Events */
 
