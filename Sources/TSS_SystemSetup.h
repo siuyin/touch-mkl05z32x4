@@ -82,20 +82,21 @@
 
 /**************************** Electrode Configuration **************************/
 
-#define TSS_N_ELECTRODES            1                 /* Number of electrodes present in the system */
+#define TSS_N_ELECTRODES            2                 /* Number of electrodes present in the system */
 
 /* Electrode's Pin Configuration */
 
 /* Configuration of Electrode Measurement Method */
 
 #define TSS_E0_TYPE                 TSI0_IN8          /* Electrode measurement method specification */
+#define TSS_E1_TYPE                 TSI0_IN9          /* Electrode measurement method specification */
 
 /************************** Controls Configuration ***************************/
 
 #define TSS_N_CONTROLS              1
 
 #define TSS_C0_TYPE                 TSS_CT_KEYPAD     /* Control type */
-#define TSS_C0_INPUTS               {0}               /* Electrodes assigned to the control */
+#define TSS_C0_INPUTS               {0,1}             /* Electrodes assigned to the control */
 #define TSS_C0_STRUCTURE            TSS1_cKey0        /* Name of the C&S struct to create */
 #define TSS_C0_CALLBACK             TSS1_fCallBack0   /* Identifier of the user's callback */
 

@@ -157,10 +157,26 @@ PE_DEBUGHALT();
         <Negative_Baseline_Drop v="Enabled" />
         <Automatic_HW_Recalibration v="Enabled" />
       </group>
-      <list name="Number of Electrodes" v="1">
+      <list name="Number of Electrodes" v="2">
         <group name="Electrode0">
           <enumgroup name="Sensing Method" v="TSI Module">
             <TSI_Channel v="TSI0_IN8/PTB12" />
+            <TSI_Device v="TSI0" />
+            <TSI_Interrupt v="INT_TSI0" />
+          </enumgroup>
+          <boolgroup name="Signal Shielding" v="Disabled" />
+          <boolgroup name="Signal Divider" v="Disabled" />
+          <boolgroup name="Signal Multiplier" v="Disabled" />
+          <boolgroup name="Config Registers Init" v="Enabled">
+            <Electrode_Enabled v="auto" />
+            <Electrode_Sensitivity v="63" />
+            <DC_Tracker_Enabled v="yes" />
+            <boolgroup name="Define Electrode Baseline" v="Disabled" />
+          </boolgroup>
+        </group>
+        <group name="Electrode1">
+          <enumgroup name="Sensing Method" v="TSI Module">
+            <TSI_Channel v="TSI0_IN9/PTA13" />
             <TSI_Device v="TSI0" />
             <TSI_Interrupt v="INT_TSI0" />
           </enumgroup>
@@ -178,8 +194,9 @@ PE_DEBUGHALT();
       <list name="Number of Controls" v="1">
         <group name="Control0">
           <enumgroup name="Control Type" v="KEYPAD">
-            <list name="Inputs" v="1">
+            <list name="Inputs" v="2">
               <Input0 v="0" />
+              <Input1 v="1" />
             </list>
             <Number_of_Electrodes v="0" />
             <list name="Key Groups" v="0">

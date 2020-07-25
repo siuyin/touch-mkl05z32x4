@@ -86,7 +86,7 @@
       <GenExtraFileSrcDir4>lib\TSS_Library\TSS_3_1\shared\</GenExtraFileSrcDir4>
       <GenExtraFileSrcDir3>lib\TSS_Library\TSS_3_1\shared\</GenExtraFileSrcDir3>
       <GenExtraFileSrcDir2>lib\TSS_Library\TSS_3_1\shared\</GenExtraFileSrcDir2>
-      <XtraAge0>1358518445</XtraAge0>
+      <XtraAge0>1358520974</XtraAge0>
       <XtraAge1>1358468465</XtraAge1>
       <XtraAge2>1358468462</XtraAge2>
       <XtraAge3>1358468462</XtraAge3>
@@ -384,7 +384,7 @@
     </GenFiles>
     <SignalListFile>Documentation\touch_SIGNALS.txt</SignalListFile>
     <DestinationCompiler>GNUC</DestinationCompiler>
-    <ProjectModificationStamp>5</ProjectModificationStamp>
+    <ProjectModificationStamp>6</ProjectModificationStamp>
   </Options>
   <CpuID_2>
     <Generated>true</Generated>
@@ -393,7 +393,7 @@
     <GenDriverVersion>01.04</GenDriverVersion>
     <GenEventModule>Events</GenEventModule>
     <HeaderAge>1358468392</HeaderAge>
-    <CodeAge>1358518445</CodeAge>
+    <CodeAge>1358520974</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>11</GenNumMethods>
     <SetClockConfiguration>false</SetClockConfiguration>
@@ -470,7 +470,7 @@
     <GenDriverVersion>01.00</GenDriverVersion>
     <GenEventModule>Events</GenEventModule>
     <HeaderAge>1358468465</HeaderAge>
-    <CodeAge>1358518445</CodeAge>
+    <CodeAge>1358520974</CodeAge>
     <AsemblAge>-1</AsemblAge>
     <GenNumMethods>1</GenNumMethods>
     <Configure>true</Configure>
@@ -554,8 +554,8 @@
       <MethodPos2>Configure</MethodPos2>
       <MethodType>method</MethodType>
       <ModuleType>Code</ModuleType>
-      <LineBeg>62</LineBeg>
-      <LineEnd>121</LineEnd>
+      <LineBeg>65</LineBeg>
+      <LineEnd>124</LineEnd>
     </MethodPos>
     <GenExtraFilesCount>22</GenExtraFilesCount>
     <ExtraFile0>Sources\TSS_SystemSetup.h</ExtraFile0>

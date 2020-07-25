@@ -160,7 +160,7 @@ PE_DEBUGHALT();
       <list name="Number of Electrodes" v="1">
         <group name="Electrode0">
           <enumgroup name="Sensing Method" v="TSI Module">
-            <TSI_Channel v="ADC0_SE9/TSI0_IN7/PTB10/TPM0_CH1" />
+            <TSI_Channel v="TSI0_IN8/PTB12" />
             <TSI_Device v="TSI0" />
             <TSI_Interrupt v="INT_TSI0" />
           </enumgroup>
@@ -175,8 +175,37 @@ PE_DEBUGHALT();
           </boolgroup>
         </group>
       </list>
-      <list name="Number of Controls" v="0">
-        <EmptySection_DummyValue />
+      <list name="Number of Controls" v="1">
+        <group name="Control0">
+          <enumgroup name="Control Type" v="KEYPAD">
+            <list name="Inputs" v="1">
+              <Input0 v="0" />
+            </list>
+            <Number_of_Electrodes v="0" />
+            <list name="Key Groups" v="0">
+              <EmptySection_DummyValue />
+            </list>
+            <boolgroup name="Config Registers Init" v="Enabled">
+              <group name="Control Configuration Register">
+                <Control_Enabled v="yes" />
+                <Callback_Enabled v="yes" />
+                <Idle_Enabled v="no" />
+                <Idle_Scan_Rate v="0" />
+              </group>
+              <group name="Event Control and Status Register">
+                <Keys_Exceeded_Enabled v="no" />
+                <Buffer_Overflow_Enabled v="no" />
+                <Auto_repeat_Enabled v="no" />
+                <Release_Event_Enabled v="no" />
+                <Touch_Event_Enabled v="yes" />
+              </group>
+              <Max_Number_of_Touches v="0" />
+              <Auto_Repeat_Rate v="0" />
+              <Auto_Repeat_Start v="0" />
+            </boolgroup>
+          </enumgroup>
+          <Structure_Name v="TSS1_cKey0" />
+        </group>
       </list>
       <group name="Sensor Settings">
         <boolgroup name="Timers" v="Disabled" />
@@ -226,7 +255,9 @@ PE_DEBUGHALT();
         <Event_procedure_name v="TSS1_fOnInit" />
       </event>
       <event name="fOnProximity" v="don&amp;apos;t generate code" />
-      <event name="fCallBack0" v="don&amp;apos;t generate code" />
+      <event name="fCallBack0" v="generate code">
+        <Event_procedure_name v="TSS1_fCallBack0" />
+      </event>
       <event name="fCallBack1" v="don&amp;apos;t generate code" />
       <event name="fCallBack2" v="don&amp;apos;t generate code" />
       <event name="fCallBack3" v="don&amp;apos;t generate code" />
