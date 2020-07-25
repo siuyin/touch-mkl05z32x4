@@ -9,6 +9,9 @@ settings:
  
  For more details see: https://community.nxp.com/thread/390760
 
+Do not try to debug by single-stepping through TSS_task.
+It has to run multiple times to average touch sense values.
+
 ## Touch Sensing Library
 This code uses the Freescale touch sensing library provided by
 Freescale Processor Expert.
