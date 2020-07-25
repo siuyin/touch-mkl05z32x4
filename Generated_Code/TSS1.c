@@ -7,7 +7,7 @@
 **     Version     : Component 03.001, Driver 01.00, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2020-07-24, 18:43, # CodeGen: 2
+**     Date/Time   : 2020-07-25, 11:05, # CodeGen: 4
 **     Contents    :
 **         Configure - byte TSS1_Configure(void);
 **
@@ -57,7 +57,7 @@ void TSS1_InitDevices(void)
 
   /* TSI Module MUX Settings */
 
-  PORTB_PCR10 = PORT_PCR_MUX(0);
+  PORTB_PCR12 = PORT_PCR_MUX(0);
 }
 
 /*
@@ -87,6 +87,17 @@ byte TSS1_Configure(void)
 
   /* Main TSS Initialization */
   u8Result |= TSS_Init();
+
+  /* Configure the Keypad Control to report the touch and release events */
+  u8Result |= TSS_SetKeypadConfig(TSS1_cKey0.ControlId, Keypad_Events_Register, TSS_KEYPAD_TOUCH_EVENT_EN_MASK);
+  /* Configure the Keypad Max Touches Register */
+  u8Result |= TSS_SetKeypadConfig(TSS1_cKey0.ControlId, Keypad_MaxTouches_Register, 0x00);
+  /* Configure the Auto-Repeat Rate Register */
+  u8Result |= TSS_SetKeypadConfig(TSS1_cKey0.ControlId, Keypad_AutoRepeatRate_Register, 0x00);
+  /* Configure the Auto-Repeat Start Register */
+  u8Result |= TSS_SetKeypadConfig(TSS1_cKey0.ControlId, Keypad_AutoRepeatStart_Register, 0x00);
+  /* Configure Keypad Control configuration registers */
+  u8Result |= TSS_SetKeypadConfig(TSS1_cKey0.ControlId, Keypad_ControlConfig_Register, TSS_KEYPAD_CONTROL_EN_MASK | TSS_KEYPAD_CALLBACK_EN_MASK);
 
   /* Electrode dc-tracker enablers */
   u8Result |= TSS_SetSystemConfig(System_DCTrackerEnablers_Register+0, 0x01);

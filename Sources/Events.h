@@ -103,6 +103,29 @@ void TSS1_fOnInit(void);
 ** ===================================================================
 */
 
+void TSS1_fCallBack0(TSS_CONTROL_ID u8ControlId);
+/*
+** ===================================================================
+**     Event       :  TSS1_fCallBack0 (module Events)
+**
+**     Component   :  TSS1 [TSS_Library]
+**     Description :
+**         Callback definition for Control 0. This event is enabled
+**         only if Control 0 is enabled.
+**         The default CallBack Name is automatically generated with
+**         automatic prefix update by current Component Name. User can
+**         define own name, but then the automatic name update is not
+**         functional.
+**     Parameters  :
+**         NAME            - DESCRIPTION
+**         u8ControlId     - Valid unique Identifier of
+**                           the Control which generated the CallBack
+**                           function. This Id can be used for finding
+**                           of Callback's source Control.
+**     Returns     : Nothing
+** ===================================================================
+*/
+
 /* END Events */
 
 #ifdef __cplusplus

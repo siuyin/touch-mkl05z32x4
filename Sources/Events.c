@@ -134,6 +134,45 @@ void TSS1_fOnInit(void)
 
 }
 
+/*
+** ===================================================================
+**     Event       :  TSS1_fCallBack0 (module Events)
+**
+**     Component   :  TSS1 [TSS_Library]
+**     Description :
+**         Callback definition for Control 0. This event is enabled
+**         only if Control 0 is enabled.
+**         The default CallBack Name is automatically generated with
+**         automatic prefix update by current Component Name. User can
+**         define own name, but then the automatic name update is not
+**         functional.
+**     Parameters  :
+**         NAME            - DESCRIPTION
+**         u8ControlId     - Valid unique Identifier of
+**                           the Control which generated the CallBack
+**                           function. This Id can be used for finding
+**                           of Callback's source Control.
+**     Returns     : Nothing
+** ===================================================================
+*/
+void TSS1_fCallBack0(TSS_CONTROL_ID u8ControlId)
+{
+  UINT8 u8Event; /* 8 bits local variable used to store the event information */
+
+  while (!TSS_KEYPAD_BUFFER_EMPTY(TSS1_cKey0))  /* While unread events are in the buffer */
+  {
+    TSS_KEYPAD_BUFFER_READ(u8Event,TSS1_cKey0); /* Read the buffer and store the event in the u8Event variable */
+
+    /* Write your code here ... */
+
+    (void) u8Event;
+  }
+
+
+  (void) u8ControlId;
+  return;
+}
+
 /* END Events */
 
 #ifdef __cplusplus
