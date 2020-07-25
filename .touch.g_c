@@ -384,7 +384,7 @@
     </GenFiles>
     <SignalListFile>Documentation\touch_SIGNALS.txt</SignalListFile>
     <DestinationCompiler>GNUC</DestinationCompiler>
-    <ProjectModificationStamp>4</ProjectModificationStamp>
+    <ProjectModificationStamp>5</ProjectModificationStamp>
   </Options>
   <CpuID_2>
     <Generated>true</Generated>

@@ -49,14 +49,14 @@
       <File Name="Generated_Code/PE_LDD.h" FileDate="2020-07-25, 10:53:13" FileAge="1595645593000" FileType="45637" CompNumb="2" />
       <File Name="Sources/TSS/TSS_SensorTSIL_def.h" FileDate="2020-07-24, 18:43:28" FileAge="1595587408000" FileType="16384" CompNumb="3" />
       <File Name="Sources/TSS/TSS_SensorTSI.h" FileDate="2020-07-24, 18:43:28" FileAge="1595587408000" FileType="16384" CompNumb="3" />
-      <File Name="Sources/Events.h" FileDate="2020-07-25, 11:05:27" FileAge="1595646327000" FileType="131328" />
+      <File Name="Sources/Events.h" FileDate="2020-07-25, 11:22:31" FileAge="1595647351000" FileType="131328" />
       <File Name="Sources/TSS/TSS_SensorGPIO_def.h" FileDate="2020-07-24, 18:43:28" FileAge="1595587408000" FileType="16384" CompNumb="3" />
       <File Name="Generated_Code/TSS1.c" FileDate="2020-07-25, 11:05:27" FileAge="1595646327000" FileType="45637" CompNumb="3" />
       <File Name="Static_Code/PDD/I2C_PDD.h" FileDate="2020-07-24, 18:41:17" FileAge="1595587277000" FileType="1048576" />
       <File Name="Generated_Code/PE_LDD.c" FileDate="2020-07-25, 10:53:13" FileAge="1595645593000" FileType="45637" CompNumb="2" />
       <File Name="Static_Code/PDD/RTC_PDD.h" FileDate="2020-07-24, 18:41:17" FileAge="1595587277000" FileType="1048576" />
       <File Name="Sources/TSS/TSS_SensorTSI.c" FileDate="2020-07-24, 18:43:28" FileAge="1595587408000" FileType="16384" CompNumb="3" />
-      <File Name="Sources/Events.c" FileDate="2020-07-25, 11:05:27" FileAge="1595646327000" FileType="131328" />
+      <File Name="Sources/Events.c" FileDate="2020-07-25, 11:21:49" FileAge="1595647309000" FileType="131328" />
       <File Name="Generated_Code/Cpu.h" FileDate="2020-07-24, 18:41:17" FileAge="1595587277000" FileType="45637" CompNumb="2" />
       <File Name="Static_Code/PDD/CMP_PDD.h" FileDate="2020-07-24, 18:41:17" FileAge="1595587277000" FileType="1048576" />
       <File Name="Documentation/doxygen/touch_project.txt" FileDate="2020-07-25, 10:53:13" FileAge="1595645593000" FileType="45637" CompNumb="2" />
@@ -76,14 +76,14 @@
       <File Name="Sources/TSS/TSS_API.h" FileDate="2020-07-24, 18:43:28" FileAge="1595587408000" FileType="16384" CompNumb="3" />
       <File Name="Documentation/touch.txt" FileDate="2020-07-25, 10:53:13" FileAge="1595645593000" FileType="3072" />
       <File Name="Generated_Code/PE_Const.h" FileDate="2020-07-24, 18:41:17" FileAge="1595587277000" FileType="45637" />
-      <File Name="Documentation/touch_SIGNALS.txt" FileDate="2020-07-25, 11:05:27" FileAge="1595646327000" FileType="3072" />
+      <File Name="Documentation/touch_SIGNALS.txt" FileDate="2020-07-25, 11:46:35" FileAge="1595648795000" FileType="3072" />
       <File Name="Static_Code/PDD/SysTick_PDD.h" FileDate="2020-07-24, 18:41:17" FileAge="1595587277000" FileType="1048576" />
       <File Name="Generated_Code/PE_Types.h" FileDate="2020-07-25, 10:53:13" FileAge="1595645593000" FileType="45637" />
       <File Name="Static_Code/PDD/LPTMR_PDD.h" FileDate="2020-07-24, 18:41:17" FileAge="1595587277000" FileType="1048576" />
       <File Name="Generated_Code/PE_Error.h" FileDate="2020-07-24, 18:41:17" FileAge="1595587277000" FileType="45637" />
       <File Name="Static_Code/PDD/PORT_PDD.h" FileDate="2020-07-24, 18:41:17" FileAge="1595587277000" FileType="1048576" />
       <File Name="Documentation/touch_Settings.xml" FileDate="2020-07-25, 11:05:27" FileAge="1595646327000" FileType="3072" />
-      <File Name="Sources/main.c" FileDate="2020-07-25, 10:53:13" FileAge="1595645593000" FileType="128" />
+      <File Name="Sources/main.c" FileDate="2020-07-25, 11:46:35" FileAge="1595648795000" FileType="128" />
       <File Name="Static_Code/PDD/DMA_PDD.h" FileDate="2020-07-24, 18:41:17" FileAge="1595587277000" FileType="1048576" />
       <File Name="Sources/TSS/TSS_SensorGPIO.h" FileDate="2020-07-24, 18:43:28" FileAge="1595587408000" FileType="16384" CompNumb="3" />
       <File Name="Static_Code/PDD/FTFA_PDD.h" FileDate="2020-07-24, 18:41:17" FileAge="1595587277000" FileType="1048576" />
@@ -107,5 +107,5 @@
       <File Name="Sources/TSS/TSS_SensorTSIL.c" FileDate="2020-07-24, 18:43:28" FileAge="1595587408000" FileType="16384" CompNumb="3" />
     </GeneratedByPE>
   </GeneratedFilesList>
-  <CodeGenReference>5</CodeGenReference>
+  <CodeGenReference>6</CodeGenReference>
 </CodeGenerationInfo>
