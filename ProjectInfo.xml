@@ -55,6 +55,7 @@
   </PATHS>
   <FILES>
     <GeneratedCs>
+      <PathName>/home/siuyin/workspace.kds/touch/Generated_Code/Bit1.c</PathName>
       <PathName>/home/siuyin/workspace.kds/touch/Generated_Code/Cpu.c</PathName>
       <PathName>/home/siuyin/workspace.kds/touch/Generated_Code/PE_LDD.c</PathName>
       <PathName>/home/siuyin/workspace.kds/touch/Generated_Code/TSS1.c</PathName>
@@ -70,6 +71,7 @@
       <PathName>/home/siuyin/workspace.kds/touch/Sources/main.c</PathName>
     </GeneratedCs>
     <GeneratedHs>
+      <PathName>/home/siuyin/workspace.kds/touch/Generated_Code/Bit1.h</PathName>
       <PathName>/home/siuyin/workspace.kds/touch/Generated_Code/Cpu.h</PathName>
       <PathName>/home/siuyin/workspace.kds/touch/Generated_Code/IO_Map.h</PathName>
       <PathName>/home/siuyin/workspace.kds/touch/Generated_Code/PE_Const.h</PathName>

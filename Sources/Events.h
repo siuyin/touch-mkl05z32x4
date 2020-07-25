@@ -34,6 +34,7 @@
 #include "PE_Const.h"
 #include "IO_Map.h"
 #include "TSS1.h"
+#include "Bit1.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -104,7 +105,6 @@ void TSS1_fOnInit(void);
 ** ===================================================================
 */
 
-TSS_CONTROL_ID CallBack0ID;
 void TSS1_fCallBack0(TSS_CONTROL_ID u8ControlId);
 /*
 ** ===================================================================
@@ -127,6 +127,8 @@ void TSS1_fCallBack0(TSS_CONTROL_ID u8ControlId);
 **     Returns     : Nothing
 ** ===================================================================
 */
+
+LDD_TDeviceData* redLED;
 
 /* END Events */
 
